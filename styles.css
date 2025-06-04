@@ -1,0 +1,108 @@
+body {
+      background-color: black;
+      font-family: 'Ubuntu', sans-serif;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #111;
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: rgba(182, 80, 255, 0.784);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: rgba(135, 222, 195, 0.748);
+    }
+
+    h1, h2 {
+      color: aqua;
+    }
+
+    p, ul, a {
+      color: bisque;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    ul {
+      list-style: disc;
+      text-align: left;
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(229, 196, 255, 0.292);
+        padding: 10px 20px;
+    }
+    .logo{
+        color: rgba(240, 241, 255, 0.836);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .nav-links li a{
+        color: rgba(255, 235, 205, 0.77);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .nav-links li a:hover{
+        color: aqua;
+    }
+    .hamburger{
+        display: none;
+        font-size: 26px;
+        color: burlywood ;
+        cursor: pointer;
+    }
+    @media (max-width: 768px){
+        .hamburger{
+            display: block;
+        }
+    
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: rgba(127, 255, 212, 0.605);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+}
